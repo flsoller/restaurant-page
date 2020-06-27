@@ -19,11 +19,20 @@ const createSidebar = () => {
         itemContainer.appendChild(button);
     }
 
-    //Add innter HTML to buttons
+    //Add innter HTML and IDs to buttons
     const buttons = itemContainer.childNodes;
     buttons[0].innerHTML = 'Home';
+    buttons[0].id = 'btnHome'
     buttons[1].innerHTML = 'Menu';
+    buttons[1].id = 'btnMenu';
     buttons[2].innerHTML = 'Contact';
+    buttons[2].id = 'btnContact';
+
+    //Create div that holds content
+    const content = document.createElement('div');
+    content.className = 'content';
+    content.id = 'content';
+    container.appendChild(content);
 }
 
 export { createSidebar }
