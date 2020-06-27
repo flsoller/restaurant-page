@@ -1,1 +1,3 @@
-alert('Hello from src');
+import { createSidebar } from './defaultpage'
+
+createSidebar();
